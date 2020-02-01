@@ -131,6 +131,8 @@
 
         .list{
             color: $color-primary-dark;
+            display: flex;
+            flex-wrap: wrap;
             margin-top: 1rem;
 
             @include respond(tab-port){

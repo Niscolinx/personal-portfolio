@@ -1,0 +1,43 @@
+.gallery {
+    font-size: 1.6rem;
+
+    .heading-box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        display: flex;
+        color: $color-primary-dark;
+        justify-content: center;
+        font-size: 3rem;
+        position: relative;
+        letter-spacing: .3rem;
+        padding-bottom: .7rem;
+        text-transform: uppercase;
+
+        @include respond(small-phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-size: cover;
+    }
+
+    &__img {
+        height: 350px;
+        width: 300px;
+        margin: 20px;
+        transition: all 1s;
+    }
+
+    &__img:hover {
+        transform: scale(1.1);
+    }
+}

@@ -594,6 +594,18 @@
   background-color: #f6f7fa;
 }
 
+.section-gallery {
+  padding: 10rem 0;
+  margin-top: -17vh;
+  background-color: #f6f7fa;
+}
+
+@media (max-width: 900px) {
+  .section-gallery {
+    margin-top: -10vh;
+  }
+}
+
 .section-contact {
   -webkit-clip-path: polygon(0% 0%, 50% 7%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 50% 7%, 100% 0, 100% 100%, 0% 100%);
@@ -768,9 +780,9 @@ body {
 }
 
 body .menu > div {
-  width: 2.5rem;
+  width: 3.5rem;
   background: #3131af;
-  height: .3rem;
+  height: .5rem;
   margin: .5rem;
   -webkit-border-radius: .2rem;
           border-radius: .2rem;
@@ -1461,6 +1473,13 @@ html {
 
 .about .detail .list {
   color: #3131af;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-top: 1rem;
 }
 
@@ -1538,6 +1557,80 @@ html {
   .portfolio__heading {
     font-size: 2rem;
   }
+}
+
+.gallery {
+  font-size: 1.6rem;
+}
+
+.gallery .heading-box {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3131af;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  letter-spacing: .3rem;
+  padding-bottom: .7rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .gallery__heading {
+    font-size: 2rem;
+  }
+}
+
+.gallery__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.gallery__img {
+  height: 350px;
+  width: 300px;
+  margin: 20px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.gallery__img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact {
